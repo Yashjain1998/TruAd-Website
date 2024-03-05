@@ -1,22 +1,25 @@
-import React from 'react'
+import React from "react";
 import Card from "./Card";
 import waves from "../assets/Waves.mp4";
 
 const Projects = () => {
   return (
-    <>
-      <h1 id="header-text">Projects</h1>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          id="background-video"
-        >
-          <source src={waves} type="video/mp4" />
-          Your browser does not support HTML5 video.
-        </video>
-      <div class="row card-container">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <div>
+        <h1 id="header-text">Projects</h1>
+      </div>
+
+      <div class="card-container" style={{
+        display:'grid',
+        gridTemplateColumns: 'auto auto auto auto',
+        gap: '2rem',
+      }}>
         {/* <canvas id="waveCanvas"></canvas> */}
         <Card
           img="https://www.truad.co/wp-content/uploads/2023/11/1.jpg"
@@ -34,8 +37,8 @@ const Projects = () => {
           subtitle="Stabdardized 2D/3D models"
         />
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Projects
+export default Projects;

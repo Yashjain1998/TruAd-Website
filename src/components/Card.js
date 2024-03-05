@@ -9,7 +9,7 @@ const Card = ({img, title, subtitle}) => {
                 className="card-img-top rounded"
                 height="260px"
                 alt="..."
-                style={{ boxShadow: "1px 1px 5px rgba(225,225,1225,0.3)" }}
+                style={{ boxShadow: "1px 1px 5px rgba(225,225,1225,0.3)", minHeight: '250px'}}
               />
               <div className="card-body text-center pb-0">
                 <p
