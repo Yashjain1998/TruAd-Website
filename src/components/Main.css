@@ -51,17 +51,14 @@ body #container header nav li .nav-icon img {
 .body {
   display: flex;
   justify-content: center;
-  position: relative;
-  align-items: center;
   height: 97%;
 }
 #header-text {
   color: white;
   font-size: 2.4em;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  padding: 0;
+  padding: 2rem;
+  letter-spacing: 5px;
+  margin-bottom: 3rem;
 }
 div.card-container{
   margin-top: -4rem;

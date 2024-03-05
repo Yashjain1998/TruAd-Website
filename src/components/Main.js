@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Main.css";
-import Logo from "../assets/TruAd_Logo.png";
-import Card from "./Card";
 import Community from "./Community";
 import Services from "./Services";
-import aiimage from "../assets/aiimage.jpg";
-import waves from "../assets/Waves.mp4";
 import Projects from "./Projects";
 import About from "./About";
 import Products from "./Products";
 import Pricing from "./Pricing";
+import waves from "../assets/Waves.mp4";
 
 const Main = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -31,7 +28,7 @@ const Main = () => {
         <nav className="row">
           <div
             className="col-4"
-            style={{ paddingTop: "2.5rem", fontSize: "large" }}
+            style={{ paddingTop: "2.5rem", fontSize: "1rem", fontWeight:'bolder', letterSpacing: '1px',}}
           >
             <ul>
               <li onClick={() => setSelectedNavItem("Products")}>Products</li>
@@ -39,7 +36,9 @@ const Main = () => {
               <li onClick={() => setSelectedNavItem("Pricing")}>Pricing</li>
             </ul>
           </div>
-          <div className="nav-icon col-4 text-center">
+          <div className="nav-icon col-4 text-center" style={{
+            height:'100px'
+          }}>
             <img
               src="https://www.truad.co/wp-content/uploads/2023/11/logo_transparent_1-150x150.png"
               alt="logo"
@@ -48,7 +47,7 @@ const Main = () => {
           </div>
           <div
             className="col-4 pe-5"
-            style={{ paddingTop: "2.5rem", fontSize: "large" }}
+            style={{ paddingTop: "2.5rem", fontSize: "1rem", fontWeight:'bolder', letterSpacing: '1px',}}
           >
             <ul>
               <li onClick={() => setSelectedNavItem("Projects")}>Projects</li>
@@ -59,14 +58,29 @@ const Main = () => {
         </nav>
       </header>
       <div className="body">
-      {
-  selectedNavItem === 'Community' ? <Community /> :
-  selectedNavItem === 'Services' ? <Services /> :
-  selectedNavItem === 'Projects' ? <Projects /> :
-  selectedNavItem === 'About Us' ? <About /> :
-  selectedNavItem === 'Products' ? <Products /> :
-  <Pricing />
-}
+      <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          id="background-video"
+        >
+          <source src={waves} type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+        {selectedNavItem === "Community" ? (
+          <Community />
+        ) : selectedNavItem === "Services" ? (
+          <Services />
+        ) : selectedNavItem === "Projects" ? (
+          <Projects />
+        ) : selectedNavItem === "About Us" ? (
+          <About />
+        ) : selectedNavItem === "Products" ? (
+          <Products />
+        ) : (
+          <Pricing />
+        )}
       </div>
     </div>
   );

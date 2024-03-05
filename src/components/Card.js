@@ -1,5 +1,4 @@
 import React from 'react'
-import aiimage from '../assets/aiimage.jpg'
 
 const Card = ({img, title, subtitle}) => {
   return (
@@ -16,16 +15,17 @@ const Card = ({img, title, subtitle}) => {
                 <p
                   className="mt-2"
                   style={{
-                    fontWeight: 900,
-                    fontSize: "large",
+                    fontWeight: 800,
+                    fontSize: "small",
                     color: "#3a84f1",
                     padding: 0,
                     marginBottom: "0.3rem",
+                    letterSpacing: '2px',
                   }}
                 >
                   {title}
                 </p>
-                <h4 className="pb-1">{subtitle}</h4>
+                <h4 className="pb-1" style={{letterSpacing:'2px'}}>{subtitle}</h4>
               </div>
             </div>
           </div>
