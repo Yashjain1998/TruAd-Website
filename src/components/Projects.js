@@ -20,7 +20,6 @@ const Projects = () => {
         gridTemplateColumns: 'auto auto auto auto',
         gap: '2rem',
       }}>
-        {/* <canvas id="waveCanvas"></canvas> */}
         <Card
           img="https://www.truad.co/wp-content/uploads/2023/11/1.jpg"
           title="Progmatic Purchasing"

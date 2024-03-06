@@ -11,13 +11,12 @@ const Services = () => {
       }}
     >
       <div>
-      <h1 id="header-text">SERVICES</h1>
+      <h1 id="header-text">PRODUCTS</h1>
       </div>
       <div 
-      // className="row card-container"
        style={{
         display:'grid',
-        gridTemplateColumns: 'auto auto auto',
+        gridTemplateColumns: 'auto auto auto auto',
         gap: '2rem',
 
       }}>

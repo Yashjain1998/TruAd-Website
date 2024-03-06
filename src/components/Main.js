@@ -7,6 +7,7 @@ import About from "./About";
 import Products from "./Products";
 import Pricing from "./Pricing";
 import waves from "../assets/Waves.mp4";
+import img from '../assets/Logomark.png'
 
 const Main = () => {
   const [showAnimation, setShowAnimation] = useState(true);
@@ -36,14 +37,13 @@ const Main = () => {
               <li onClick={() => setSelectedNavItem("Pricing")}>Pricing</li>
             </ul>
           </div>
-          <div className="nav-icon col-4 text-center" style={{
-            height:'100px'
-          }}>
+          <div className="nav-icon col-4 text-center" id="logo">
             <img
-              src="https://www.truad.co/wp-content/uploads/2023/11/logo_transparent_1-150x150.png"
+              src={img}
               alt="logo"
-              height="140px"
+              height="50px"
             />
+            <span>TruAd</span>
           </div>
           <div
             className="col-4 pe-5"

@@ -41,15 +41,15 @@ body #container header nav {
 }
 
 
-body #container header nav li .nav-icon {
-  margin: 5px;
+#logo{
+  margin-top: 1.3rem;
 }
-
-body #container header nav li .nav-icon img {
-  height: 30px;
-  width: 30px;
+#logo>span{
+  height: 100%;
+  vertical-align: middle;
+  font-size: x-large;
+  padding-left: 0.3rem;
 }
-
 .body {
   display: flex;
   justify-content: center;
@@ -69,7 +69,7 @@ div.card-container{
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 20px rgba(219, 219, 219, 0.9);
   color: white;
-  background-color: inherit;
+  background-color: #0000005c;
   height: 23rem;
   overflow: hidden;
 }
