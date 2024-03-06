@@ -63,7 +63,7 @@ body #container header nav {
   margin-bottom: 3rem;
 }
 div.card-container{
-  margin-top: -4rem;
+  /* margin-top: -4rem; */
 }
 #card{
   backdrop-filter: blur(20px);
@@ -75,4 +75,18 @@ div.card-container{
 }
 #card:hover{
   border: 1px solid rgba(219, 219, 219, 0.9);
+}
+
+@media screen and (max-width: 1024px) {
+   body #container header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body #container header nav ul {
+   display: flex;
+   flex-direction: column;
+ }
 }

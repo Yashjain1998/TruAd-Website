@@ -29,7 +29,7 @@ const Main = () => {
         <nav className="row">
           <div
             className="col-4"
-            style={{ paddingTop: "2.5rem", fontSize: "1rem", fontWeight:'bolder', letterSpacing: '1px',}}
+            style={{ paddingTop: "2.5rem", fontSize: "1rem", fontWeight:'bolder', letterSpacing: '1px'}}
           >
             <ul>
               <li onClick={() => setSelectedNavItem("Products")}>Products</li>
