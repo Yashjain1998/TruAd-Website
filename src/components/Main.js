@@ -32,10 +32,11 @@ const Main = () => {
             style={{ paddingTop: "2.5rem", fontSize: "1rem", fontWeight:'bolder', letterSpacing: '1px',}}
           >
             <ul 
+            className="row"
             >
-              <li onClick={() => setSelectedNavItem("Products")}>Products</li>
-              <li onClick={() => setSelectedNavItem("Services")}>Services</li>
-              <li onClick={() => setSelectedNavItem("Pricing")}>Pricing</li>
+              <li className="col" onClick={() => setSelectedNavItem("Products")}>Products</li>
+              <li className="col" onClick={() => setSelectedNavItem("Services")}>Services</li>
+              <li className="col" onClick={() => setSelectedNavItem("Pricing")}>Pricing</li>
             </ul>
           </div>
           <div className="nav-icon col-4 text-center" id="logo">
@@ -50,10 +51,10 @@ const Main = () => {
             className="col-4 pe-5"
             style={{ paddingTop: "2.5rem", fontSize: "1rem", fontWeight:'bolder', letterSpacing: '1px',}}
           >
-            <ul>
-              <li onClick={() => setSelectedNavItem("Projects")}>Projects</li>
-              <li onClick={() => setSelectedNavItem("Community")}>Community</li>
-              <li onClick={() => setSelectedNavItem("About Us")}>About Us</li>
+            <ul className="row">
+              <li className="col" onClick={() => setSelectedNavItem("Projects")}>Projects</li>
+              <li className="col" onClick={() => setSelectedNavItem("Community")}>Community</li>
+              <li className="col" onClick={() => setSelectedNavItem("About Us")}>About Us</li>
             </ul>
           </div>
         </nav>

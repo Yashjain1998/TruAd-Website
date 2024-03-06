@@ -62,9 +62,6 @@ body #container header nav {
   letter-spacing: 5px;
   margin-bottom: 3rem;
 }
-div.card-container{
-  margin-top: -4rem;
-}
 #card{
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 20px rgba(219, 219, 219, 0.9);
