@@ -31,7 +31,8 @@ const Main = () => {
             className="col-4"
             style={{ paddingTop: "2.5rem", fontSize: "1rem", fontWeight:'bolder', letterSpacing: '1px',}}
           >
-            <ul>
+            <ul 
+            >
               <li onClick={() => setSelectedNavItem("Products")}>Products</li>
               <li onClick={() => setSelectedNavItem("Services")}>Services</li>
               <li onClick={() => setSelectedNavItem("Pricing")}>Pricing</li>
