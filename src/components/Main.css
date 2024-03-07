@@ -1,17 +1,17 @@
-
+/* w-288 h-368 */
 
 body #container {
   height: 100%;
   width: 100%;
 }
 #background-video {
-  position: fixed; 
-  right: 0; 
+  position: fixed;
+  right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
-  width: auto; 
-  height: auto; 
+  width: auto;
+  height: auto;
   z-index: -100; /* Ensure video is behind other content */
   background-size: cover;
 }
@@ -30,21 +30,25 @@ body #container header nav {
   color: white;
   padding-inline: 2rem;
 }
-#container ul{
+
+body #container header nav .nav-btn {
+  display: none;
+}
+
+#container ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-#container ul li:hover{
-  color: #00BFFF;
+#container ul li:hover {
+  color: #00bfff;
 }
 
-
-#logo{
+#logo {
   margin-top: 1.3rem;
 }
-#logo>span{
+#logo > span {
   height: 100%;
   vertical-align: middle;
   font-size: x-large;
@@ -62,31 +66,61 @@ body #container header nav {
   letter-spacing: 5px;
   margin-bottom: 3rem;
 }
-div.card-container{
-  /* margin-top: -4rem; */
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2rem;
 }
-#card{
+#card {
   backdrop-filter: blur(20px);
   box-shadow: 0 4px 20px rgba(219, 219, 219, 0.9);
   color: white;
   background-color: #0000005c;
   height: 23rem;
   overflow: hidden;
+  min-width: 288px;
 }
-#card:hover{
+#card:hover {
   border: 1px solid rgba(219, 219, 219, 0.9);
 }
 
-@media screen and (max-width: 1024px) {
-   body #container header nav ul {
-    display: flex;
-    flex-direction: column;
-  }
+body #container header nav > .show {
+  display: block;
 }
 
-@media screen and (max-width: 800px) {
-  body #container header nav ul {
-   display: flex;
-   flex-direction: column;
- }
+body #container header nav > .links-container {
+  padding-top: 2.5rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  body #container header nav > .links-container {
+    display: none;
+  }
+
+  body #container header nav .nav-btn {
+    display: block;
+    text-align: right;
+  }
+
+  body #container header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #logo {
+    text-align: start;
+  }
+}
+@media screen and (max-width: 900px) {
+  #card-container {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 550px) {
+  #card-container {
+    grid-template-columns: repeat(1, auto);
+  }
 }
