@@ -12,18 +12,18 @@ const Products = ({setSelectedNavItem}) => {
             fontSize: "large",
             letterSpacing: 7,
             fontWeight: "bolder",
-            fontStyle: "italic"
           }}
         >
           DISCOVER
         </h6>
-        <h1 style={{ letterSpacing: 10, fontWeight: "bolder" }}>ARTIFICIAL</h1>
+        <h1 style={{ letterSpacing: 10, fontWeight: "bolder" }}>WE BUILD</h1>
         <h1 style={{ letterSpacing: 10, fontWeight: "bolder" }}>
-          INTELLIGRNCE
+        DIGITAL EXPERINCES
         </h1>
         <button
-          className="btn btn-secondary"
-          style={{ marginTop: "3rem", padding: "0.5", letterSpacing: 2 }}
+          className="btn"
+          id='button'
+        
           onClick={() => setSelectedNavItem("Services")}
         >
           EXPLORE

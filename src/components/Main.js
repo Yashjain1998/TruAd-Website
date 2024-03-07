@@ -1,28 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "./Main.css";
 import Community from "./Community";
-import Services from "./Services";
+import Services from "./Product";
 import Projects from "./Projects";
 import About from "./About";
-import Products from "./Products";
+import Products from "./Home";
 import Pricing from "./Pricing";
 import waves from "../assets/Waves.mp4";
 import img from "../assets/Logomark.png";
 
 const Main = () => {
-  const [showAnimation, setShowAnimation] = useState(true);
+
   const [selectedNavItem, setSelectedNavItem] = useState("Products"); // Default component to show
   const [showNav, setShowNav] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setShowAnimation(false);
-    }, 3000);
-  }, []);
-
-  const handleNavItemClick = (component) => {
-    setSelectedNavItem(component);
-  };
 
   return (
     <div id="container">
@@ -30,25 +21,19 @@ const Main = () => {
         <nav className="row">
           <div
             className={!showNav ? "col-4 links-container" : "show"}
-            // style={{
-            //   paddingTop: "2.5rem",
-            //   fontSize: "1rem",
-            //   fontWeight: "bolder",
-            //   letterSpacing: "1px",
-            // }}
           >
             <ul className="row">
               <li
                 className="col"
                 onClick={() => setSelectedNavItem("Products")}
               >
-                Products
+                Home
               </li>
               <li
                 className="col"
                 onClick={() => setSelectedNavItem("Services")}
               >
-                Services
+                Products
               </li>
               <li className="col" onClick={() => setSelectedNavItem("Pricing")}>
                 Pricing
@@ -76,13 +61,13 @@ const Main = () => {
             </svg>
             </button>
           </div>
-          <div className={!showNav ? "col-4 pe-5 links-container" : "show"}>
+          <div className={!showNav ? "col-4 links-container" : "show"}>
             <ul className="row">
               <li
                 className="col"
                 onClick={() => setSelectedNavItem("Projects")}
               >
-                Projects
+                AI Process
               </li>
               <li
                 className="col"
