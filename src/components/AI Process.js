@@ -1,6 +1,5 @@
 import React from "react";
-import Card from "./Card";
-import waves from "../assets/Waves.mp4";
+import Card from "./card/AI Process";
 
 const Projects = () => {
   return (
@@ -12,7 +11,7 @@ const Projects = () => {
       }}
     >
       <div>
-        <h1 id="header-text">Projects</h1>
+        <h1 id="header-text">AI Process</h1>
       </div>
 
       <div class="card-container" style={{

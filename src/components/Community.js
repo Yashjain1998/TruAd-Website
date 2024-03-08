@@ -1,6 +1,5 @@
 import React from "react";
-import Card from "./Card";
-import waves from "../assets/Waves.mp4";
+import Card from "./card/Card";
 
 const Community = () => {
   return (
