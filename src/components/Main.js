@@ -9,6 +9,7 @@ import Pricing from "./Pricing";
 import waves from "../assets/Waves.mp4";
 import img from "../assets/Logomark.png";
 
+
 const Main = () => {
   const [showAnimation, setShowAnimation] = useState(true);
   const [selectedNavItem, setSelectedNavItem] = useState("Products"); // Default component to show

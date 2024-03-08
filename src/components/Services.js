@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import Nitron from "../assets/Nitron.png"
 
 const Services = () => {
   return (
@@ -19,10 +20,10 @@ const Services = () => {
       >
         <Card
           img={
-            "https://img.freepik.com/premium-photo/person-with-back-human-with-word-ai-back_86390-10851.jpg?w=2000"
+            Nitron
           }
-          title={"Virtual Technology"}
-          subtitle={"Decentralized AI"}
+          title={"Nitron"}
+          subtitle={"AI Advertising Platform"}
         />
         <Card
           img={

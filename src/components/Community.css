@@ -1,0 +1,59 @@
+.com-container {
+  width: 100%;
+}
+
+.com-container .com-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 8px;
+}
+.com-container .com-cards-container .com-card-container {
+  width: 100%;
+  min-width: 250px;
+  padding: 12px;
+  box-shadow: 0 4px 20px rgba(219, 219, 219, 0.9);
+  border-radius: 8px;
+}
+
+.com-container .com-cards-container .com-card-container .com-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.com-container .com-cards-container .com-card-container .com-card .com-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.com-container .com-cards-container .com-card-container .com-card > p {
+  text-align: start;
+}
+
+.com-container
+  .com-cards-container
+  .com-card-container
+  .com-card
+  .com-icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.com-container
+  .com-cards-container
+  .com-card-container
+  .com-card
+  .com-icon-container
+  > img {
+  height: 50px;
+  width: 80px;
+  border-radius: 50%;
+}
