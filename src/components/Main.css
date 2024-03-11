@@ -75,7 +75,7 @@ body #container header nav .nav-btn {
 }
 #card-container {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  /* grid-template-columns: repeat(4, auto); */
   gap: 2rem;
 }
 #card {
@@ -89,6 +89,8 @@ body #container header nav .nav-btn {
 }
 #card:hover {
   border: 1px solid rgba(219, 219, 219, 0.9);
+  height: auto;
+  transform: scale(1.05);
 }
 
 body #container header nav > .show {
@@ -110,6 +112,7 @@ body #container header nav > .links-container {
   body #container header nav .nav-btn {
     display: block;
     text-align: right;
+    
   }
 
   body #container header nav {

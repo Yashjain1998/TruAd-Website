@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./card/Card";
 import img from '../assets/img.png'
 const Services = () => {
   return (

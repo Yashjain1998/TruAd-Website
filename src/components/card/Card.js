@@ -7,12 +7,8 @@ const Card = ({ img, title, subtitle }) => {
         <img
           src={img}
           className="card-img-top rounded"
-          height="250px"
+          max-height="250px"
           alt="..."
-          style={{
-            // boxShadow: "1px 1px 5px rgba(225,225,1225,0.3)",
-            // minHeight: "250px",
-          }}
         />
         <div className="card-body text-center pb-0">
           <h4
@@ -28,7 +24,7 @@ const Card = ({ img, title, subtitle }) => {
           >
             {title}
           </h4>
-          <p className="pb-1" style={{ letterSpacing: '2px'}}>
+          <p className="pb-1" style={{ letterSpacing: '2px',}}>
             {subtitle}
           </p>
         </div>

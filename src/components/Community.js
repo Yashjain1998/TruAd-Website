@@ -1,8 +1,9 @@
 import React from "react";
-import Card from "./Card";
+import Card from "./card/Card";
 import waves from "../assets/Waves.mp4";
 import "./Community.css";
 import CommunityCard from "./CommunityCard";
+
 
 const Community = () => {
   return (

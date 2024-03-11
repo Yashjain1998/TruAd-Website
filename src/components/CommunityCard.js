@@ -7,7 +7,7 @@ const CommunityCard = ({title, imgs, desc}) => {
             <div className="com-name">
               <h1>{title}</h1>
               <div className="com-icon-container">
-                {imgs && imgs.map((img) => <img src={img}/>)}
+                {imgs && imgs && imgs.map((img) => <img src={img}/>)}
               </div>
             </div>
             <p>

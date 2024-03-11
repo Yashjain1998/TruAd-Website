@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Main.css";
 import Community from "./Community";
 import Services from "./Product";
-import Projects from "./Projects";
+import Projects from "./AI Process";
 import About from "./About";
 import Products from "./Home";
 import Pricing from "./Pricing";
@@ -87,7 +87,7 @@ const Main = () => {
         </nav>
       </header>
       <div className="body">
-        <video autoPlay muted loop playsInline id="background-video">
+        <video autoPlay muted  loop playsInline id="background-video">
           <source src={waves} type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
